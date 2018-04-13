@@ -1,0 +1,8 @@
+简介：本次使用Python+Selenium+unittest搭建自动化测试框架，实现基于GUI的自动化测试
+目前目录结构为（后续根据实际情况进行补充改进）：
+Automation-ThirdJjtf>   config/     #存放公共配置文件（用户配置、数据库配置、邮件配置等）、参数化文件（csv、excel、等）
+                        log/        记录每次执行出现错误的日志
+                        report/     #每次执行的报告和截图放在一个新建的文件夹中
+                        test_case/          #存放测试用例
+                        test_case/common    #用户存放公共模块用例，如登录等
+                        all_case.py         #执行 test_case 目录中的测试用例
