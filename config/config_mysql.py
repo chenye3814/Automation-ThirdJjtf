@@ -70,8 +70,6 @@ class mysql_use:
         print(result)
         test.mysql_close()
 
-a = mysql_use()
-
 
 
 
