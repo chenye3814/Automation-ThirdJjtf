@@ -55,3 +55,10 @@ JavaScript error: https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/stat
 
 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 
+1523873671288	geckodriver	INFO	geckodriver 0.19.1
+1523873671304	geckodriver	INFO	Listening on 127.0.0.1:14962
+1523873673418	mozrunner::runner	INFO	Running command: "E:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.imXKgEz8FYED"
+1523873679041	Marionette	INFO	Enabled via --marionette
+1523873698237	Marionette	INFO	Listening on port 14970
+1523873699107	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/plugins/every_cookie_4644b13.js, line 4: ReferenceError: c is not defined

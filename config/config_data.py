@@ -35,22 +35,27 @@ def report_path():               #获取report目录的路径
 
 def once_repath():              #创建本次执行结果的报告所在目录，用于在执行本次脚本前创建
     repath = report_path()
-    newpath = R'{}/report-{}'.format(repath,get_time())
-    os.mkdir(newpath)
-    return newpath
+    once_repath = R'{}/report-{}'.format(repath,get_time())
+    os.mkdir(once_repath)
+    return once_repath
 
-def html_repath(newpath):       #创建报告路径,需要传本次执行的报告所在目录
-    html_repath = os.path.join(newpath,'report_{}.html'.format(get_time()))
+def html_repath(once_repath):       #创建报告路径,需要传本次执行的报告所在目录
+    html_repath = os.path.join(once_repath,'report_{}.html'.format(get_time()))
     return html_repath
 
-def screen_path(newpath):       #创建截图路径,需要传本次执行的报告所在目录
-    screen_path = os.path.join(newpath,'screen_{}.png'.format(get_time()))
+def screen_path(once_repath):       #创建截图路径,需要传本次执行的报告所在目录
+    screen_path = os.path.join(once_repath,'screen_{}.png'.format(get_time()))
     return screen_path
 
 def log_path(str):                  #获取log目录的路径
     rootdir = pro_root_dir()
     log_path = os.path.join(rootdir,'log')
     return log_path
+
+def case_path():                  #获取test_case目录的路径
+    rootdir = pro_root_dir()
+    case_path = os.path.join(rootdir,'test_case')
+    return case_path
 
 def get_time():                     #获取当前时间
     now = time.strftime("%Y%m%d-%H%M%S",time.localtime())
