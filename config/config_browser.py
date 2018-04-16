@@ -10,6 +10,5 @@ def browser_choose(str):
     elif str.lower()=="firefox":
         browser = webdriver.Firefox()
     else:
-        print("no this driver")
+        print("no this browser_driver")
     return browser
-
