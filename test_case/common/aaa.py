@@ -1,8 +1,4 @@
-from selenium import webdriver
-import time
 from config import config_browser,config_data,config_mysql
-import os
-import sys
 import unittest
 
 class My_test(unittest.TestCase):

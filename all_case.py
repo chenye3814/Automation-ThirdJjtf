@@ -1,7 +1,5 @@
 import unittest
 import HTMLTestReportCN
-import time
-import os,sys
 from test_case.common.aaa import My_test
 from config import config_data
 from config import config_email
