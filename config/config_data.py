@@ -36,7 +36,10 @@ def report_path():               #获取report目录的路径
 def once_repath():              #创建本次执行结果的报告所在目录，用于在执行本次脚本前创建
     repath = report_path()
     once_repath = R'{}/report-{}'.format(repath,get_time())
-    os.mkdir(once_repath)
+    if os.path.exists(once_repath):
+        pass
+    else:
+        os.mkdir(once_repath)
     return once_repath
 
 def html_repath(once_repath):       #创建报告路径,需要传本次执行的报告所在目录
